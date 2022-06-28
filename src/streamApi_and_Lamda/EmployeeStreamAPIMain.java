@@ -22,6 +22,7 @@ public class EmployeeStreamAPIMain {
 
 		System.out.println(" First salary : " + employees);
 		
+		// Employee age more than 25 years, will increment salary 10% hike. 
 		List<Employee> Incrementemployees = employees.stream().map(e -> {
 			if (e.getAge() > 25) {
 				e.setSalary(e.getSalary() * 1.10);
